@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" a href="CSS\Home.css">
+    </head>
+    <body>
+
+        <nav>
+            <img src="Pictures/navlogo.png" width="50px" height="50px">
+            <p class="lgname">The Furniture Haven</p>
+              <ul class="ul1" >
+                <li><a class="active" href="Home.html">Home</a></li>
+                
+                    <div class="dropdown">
+                        <button class="dropbtn">Products
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="Trending.html">Trending</a>
+                          <a href="Bed.html">Bed</a>
+                          <a href="Cupboard.html">Cupboard</a>
+                          <a href="Table.html">Table</a>
+                          <a href="Chairs.html">Chairs</a>
+                        </div>
+                        
+                    </div>
+                <li><a href="aboutus1.html">About Us</a></li>
+                <li><a  href="contact1.html">Contact</a></li>
+
+              </ul>
+        
+        
+        
+              <!-- my search-->
+                <form action="/search" method="GET">
+                 <input type="text" name="text" placeholder="">
+                <button type="submit" name="submit">search</button>
+                &nbsp
+                <button class="login" ><a href="Login_form.php">Login</a> </button>
+                </form>
+        
+              
+          </nav>
+        
+
+        <section class="sec"><img src="Pictures/bac_img3.jpg" class="rd" id="randomeChange">
+            
+        
+
+        
+<script>
+  let randomeChange = document.getElementById('randomeChange');
+let images = ["Pictures/bac_img02.jpg", "Pictures/bac_img4.jpg", "Pictures/bac_img5.jpg", "Pictures/bac_img7.jpg","Pictures/bac_img1.jpg", "Pictures/bac_img6.jpg"]
+setInterval(function(){
+let random= Math.floor(Math.random() * 6);
+ randomeChange.src=images[random];
+},1500);
+</script>
+          </section>
+
+
+<!--div class="us"><h1><u>categories</u></h1>
+<div class="ct1">zcxcz</div>&nbsp
+
+</div>-->
+
+
+
+
+
+
+
+
+<div class="container">
+
+  <h3 class="title"> Special Packages </h3>
+
+  <div class="products-container">
+
+     <a href="Trending.html"> <div class="product" data-name="p-1">
+        <img src="pictures/bac_img3.jpg" alt="">
+        <h3>Trending</h3>
+     </div></a>
+
+     
+
+     <a href="Bed.html"><div class="product" data-name="p-3">
+        <img src="pictures/hp2.jpeg" alt="">
+        <h3>Bed</h3>
+     </div></a>
+
+     <a href="Cupboard.html"><div class="product" data-name="p-3">
+        <img src="pictures/ch4.jpg" alt="">
+        <h3>Cupboard</h3>
+     </div></a>
+
+     <a href="Table.html"><div class="product" data-name="p-2">
+        <img src="pictures/hp1.jpeg" alt="">
+        <h3>Table</h3>
+     </div></a>
+
+      <a href="Chairs.html"><div class="product" data-name="p-2">
+        <img src="pictures/ch2.jpg" alt="">
+        <h3>Chairs</h3>
+     </div></a>
+
+     
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+        <footer class="footer">
+
+            <div class="lfooter">
+              <div>
+                <img src="Pictures/removelogo.png" width="150px" height="150px">
+              </div>
+            </div>
+          
+            <div class="cfooter">
+              <div>
+              <dl>
+                <b>
+                <dt>Contact Us</dt></b><br>
+                <dd>+94714567893</dd>
+                <dd>+94455715335</dd>
+              </dl>
+              </div>
+          
+            <div>
+              <dl>
+                <b>
+                  <dt>Email</dt></b><br>
+                  <dd>furniturehaven@gmail.com</dd>
+              </dl>
+            </div>
+            </div>
+          
+          <div class="rfooter">
+            <div>
+              <dl><b>
+              <dt>Quick Links</dt></b><br>
+              <dd><a href="Home.html">Home</a></dd>
+              <dd><a href=".html">Product</a></dd>
+              <dd><a href="contact1.html">Contact</a></dd>
+              <dd><a href="aboutus1.html">About Us</a></dd>
+              </dl>
+            </div> 
+          </div>
+          </footer>
+
+
+    </body>
+</html>
